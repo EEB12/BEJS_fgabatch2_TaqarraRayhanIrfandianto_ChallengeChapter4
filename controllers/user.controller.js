@@ -62,8 +62,7 @@ const createUser = async (req, res) => {
           create: {
             identity_type:req.body.identity_type,
             identity_number:req.body.identity_number,
-            // address:address,
-            // phone:phone
+           
           }
         }
       },
