@@ -18,7 +18,7 @@ const getAccountById = async (req, res) => {
             
         })
         if (!Account) {
-            return res.status(404).json({ error: 'Account not found' })
+            return res.status(400).json({ error: 'Account not found' })
         }
         res.status(200).json(Account)
     } catch (error) {
